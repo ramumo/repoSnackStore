@@ -20,7 +20,7 @@ namespace Model.Entities
         [StringLength(300)]
         public string Cliente { get; set; }
 
-        public decimal Total { get; set; }
+        public decimal Total { get; set; }        
 
         public DateTime Creado { get; set; }
 
@@ -35,6 +35,7 @@ namespace Model.Entities
         public string CabeceraProductoNombre { get; set; }
         public int CabeceraProductoCantidad { get; set; }
         public decimal CabeceraProductoPrecio { get; set; }
+        public decimal CabeceraProductoDescuento { get; set; }
         #endregion
 
         #region Contenido
@@ -44,7 +45,30 @@ namespace Model.Entities
         #region Pie
         public decimal Total()
         {
+            decimal total = 0;
+            decimal descuento = Descuento(CabeceraProductoDescuento);
+            decimal subTotal = SubTotal();            
+
+            total = (subTotal - descuento);
+
+            return total;
+        }
+
+        public decimal SubTotal()
+        {
             return ComprobanteDetalle.Sum(x => x.Monto());
+        }
+
+        public decimal Descuento(decimal desc)
+        {
+            decimal descuento = 0;
+
+            if (SubTotal() >= 10000 && (ComprobanteDetalle.Count >= 3))
+            {
+                descuento = (desc * SubTotal());
+            }
+
+            return descuento;
         }
         public DateTime Creado { get; set; }
         #endregion

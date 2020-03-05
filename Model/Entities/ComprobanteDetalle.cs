@@ -34,9 +34,32 @@ namespace Model.Entities
         public int Cantidad { get; set; }
         public decimal PrecioUnitario { get; set; }
         public bool Retirar { get; set; }
+        public decimal Descuento { get; set; }
         public decimal Monto()
         {
-            return Cantidad * PrecioUnitario;
+            bool resultado = EsPrimo(Cantidad);
+            decimal total = (Cantidad * PrecioUnitario);
+            if (ProductoNombre == "Gelatina" && !resultado)
+            {
+                total =  total/ 2;
+            }
+            return total;
+        }
+
+        public bool EsPrimo(int numero)
+        {
+            int divisor = 2;
+            int resto = 0;
+            while (divisor < numero)
+            {
+                resto = numero % divisor;
+                if (resto == 0)
+                {
+                    return false;
+                }
+                divisor = divisor + 1;
+            }
+            return true;
         }
     }
     #endregion
