@@ -37,11 +37,13 @@ namespace Model.Entities
         public decimal Descuento { get; set; }
         public decimal Monto()
         {
-            bool resultado = EsPrimo(Cantidad);
             decimal total = (Cantidad * PrecioUnitario);
-            if (ProductoNombre == "Gelatina" && !resultado)
+            if (ProductoNombre == "Gelatina" )
             {
-                total =  total/ 2;
+                if (!EsPrimo(Cantidad))
+                {
+                    total = total / 2;
+                }                
             }
             return total;
         }
@@ -50,7 +52,7 @@ namespace Model.Entities
         {
             int divisor = 2;
             int resto = 0;
-            while (divisor < numero)
+            while (divisor < numero || numero == 2)
             {
                 resto = numero % divisor;
                 if (resto == 0)

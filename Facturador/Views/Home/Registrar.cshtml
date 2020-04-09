@@ -103,16 +103,20 @@
                 }
             </ul>
 
-            @if (Model.ComprobanteDetalle.Count > 0)
+            @if (Model.ComprobanteDetalle.Count >= 3)
             {
                 <div class="col-xs-2">
-                    <b>Descuento</b> <br />
-                    @Html.TextBoxFor(x => x.CabeceraProductoDescuento, new { @class = "form-control", placeholder = "Descuento" })
-                    <br />
+                    <b>Descuento</b>
+                    @Html.TextBoxFor(x => x.CabeceraProductoDescuento, new { @class = "form-control", placeholder = "Descuento" })<br />
                 </div>
-                            
-                <br /><br /><br /><br />
+                <div class="col-xs-4">
+                    @string.Format("{0:c}", Model.CabeceraProductoDescuentoTotal)
+                </div>
+                
+             }
 
+            @if (Model.ComprobanteDetalle.Count > 0)
+            {
                 <button class="btn btn-primary btn-block btn-lg" type="submit" value="generar" name="action">Agregar</button>
             }
         </div>

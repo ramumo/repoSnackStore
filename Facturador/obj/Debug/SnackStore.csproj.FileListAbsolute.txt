@@ -94,6 +94,7 @@ C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\SnackS
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\SnackStore\Facturador\obj\Debug\SnackStore.csproj.CopyComplete
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\SnackStore\Facturador\obj\Debug\Facturador.dll
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\SnackStore\Facturador\obj\Debug\Facturador.pdb
+C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\obj\Debug\SnackStore.csproj.CoreCompileInputs.cache
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\bin\roslyn\csc.exe
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -138,7 +139,6 @@ C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSn
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\bin\Antlr3.Runtime.pdb
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\bin\Newtonsoft.Json.xml
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\obj\Debug\SnackStore.csprojAssemblyReference.cache
-C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\obj\Debug\SnackStore.csproj.CoreCompileInputs.cache
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\obj\Debug\SnackStore.csproj.CopyComplete
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\obj\Debug\Facturador.dll
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Facturador\obj\Debug\Facturador.pdb

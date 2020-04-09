@@ -36,6 +36,8 @@ namespace Model.Entities
         public int CabeceraProductoCantidad { get; set; }
         public decimal CabeceraProductoPrecio { get; set; }
         public decimal CabeceraProductoDescuento { get; set; }
+        public decimal CabeceraProductoDescuentoTotal { get; set; }
+        public decimal CabeceraProductoSubTotal { get; set; }
         #endregion
 
         #region Contenido
@@ -46,27 +48,34 @@ namespace Model.Entities
         public decimal Total()
         {
             decimal total = 0;
-            decimal descuento = Descuento(CabeceraProductoDescuento);
-            decimal subTotal = SubTotal();            
+            this.CabeceraProductoDescuentoTotal = Descuento(CabeceraProductoDescuento);
+            this.CabeceraProductoSubTotal = SubTotal();            
 
-            total = (subTotal - descuento);
+            total = (this.CabeceraProductoSubTotal - this.CabeceraProductoDescuentoTotal);
 
             return total;
         }
 
         public decimal SubTotal()
         {
-            return ComprobanteDetalle.Sum(x => x.Monto());
+            decimal sub = ComprobanteDetalle.Sum(x => x.Monto());
+            //this.CabeceraProductoSubTotal = sub;
+            return sub;
         }
 
         public decimal Descuento(decimal desc)
         {
             decimal descuento = 0;
+            decimal subtotal = SubTotal();
 
-            if (SubTotal() >= 10000 && (ComprobanteDetalle.Count >= 3))
+            if (subtotal >= 10000 
+                && (ComprobanteDetalle.Count >= 3) 
+                && CabeceraProductoDescuento <= 10)
             {
-                descuento = (desc * SubTotal());
+                descuento = ((desc / 100) * subtotal);
             }
+
+            //this.CabeceraProductoDescuentoTotal = descuento;
 
             return descuento;
         }

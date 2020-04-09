@@ -18,14 +18,14 @@ C:\Users\ramurill\Documents\UTN\Ejemplo-de-facturador-ASP.NET-MVC\Model\obj\Debu
 C:\Users\ramurill\Documents\UTN\Ejemplo-de-facturador-ASP.NET-MVC\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\ramurill\Documents\UTN\Ejemplo-de-facturador-ASP.NET-MVC\Model\obj\Debug\Model.dll
 C:\Users\ramurill\Documents\UTN\Ejemplo-de-facturador-ASP.NET-MVC\Model\obj\Debug\Model.pdb
+C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\bin\Debug\Model.dll
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\bin\Debug\Model.pdb
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\bin\Debug\EntityFramework.dll
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\bin\Debug\EntityFramework.xml
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\obj\Debug\Model.csprojAssemblyReference.cache
-C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\obj\Debug\Model.dll
 C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\obj\Debug\Model.pdb
+C:\Users\ramurill\Documents\UTN\Calidad del Software\Projecto_Snack_Store\repoSnack\repoSnackStore\Model\obj\Debug\Model.csprojAssemblyReference.cache
