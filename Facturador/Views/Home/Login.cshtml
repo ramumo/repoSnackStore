@@ -1,0 +1,31 @@
+﻿
+@model Model.Entities.UsuarioViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2 class="page-header">Login</h2>
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post, new { id = "frm-comprobante" }))
+{
+    <body class="text-center">
+        <form class="form-signin">
+            <div style="width:30%; margin:auto">
+                <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+                <label for="inputUser" class="sr-only">Nombre de Usuario</label>
+                @Html.TextBoxFor(x => x.CabeceraUsuario, new { @class = "form-control", placeholder = "Nombre de usuario", id = "Usuario" })
+                <label for="inputPassword" class="sr-only">Password</label>
+                @Html.TextBoxFor(x => x.CabeceraPassword, new { @class = "form-control", placeholder = "Contraseña", id = "Contrasena" })
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="recordar"> Recordarme
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" value="ingresar" name="action">Sign in</button>
+                <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+            </div>
+
+        </form>
+    </body>
+}
+

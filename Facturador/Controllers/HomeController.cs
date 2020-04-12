@@ -12,8 +12,9 @@ namespace Facturador.Controllers
     {
         private ComprobanteLogic cl = new ComprobanteLogic();
         private ProductoLogic pl = new ProductoLogic();
+        private UsuarioLogic ul = new UsuarioLogic();
 
-        public ActionResult Index()
+        public ActionResult Principal()
         {
             return View(cl.Listar());
         }
@@ -85,9 +86,38 @@ namespace Facturador.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
 
             return View();
         }
+
+        
+        public ActionResult Login(string nombreUsuario, string contrasena, UsuarioViewModel model, string action)
+        {
+
+            if (action == "ingresar")
+            {
+                var usuario = Json(ul.Buscar(nombreUsuario, contrasena));
+                if (usuario != null)
+                {
+                    return Redirect("~/principal");
+                }
+                else
+                {
+                    ModelState.AddModelError("usuario", "ashdfkhsjaydhfg");
+                }
+            }
+
+            return View();
+        }
+
+
+
+        public ActionResult Index()
+        {
+
+            return View();
+        }
+
+
     }
 }

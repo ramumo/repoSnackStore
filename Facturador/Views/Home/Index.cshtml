@@ -1,6 +1,6 @@
 ﻿@model List<Model.Entities.Comprobante>
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Login";
 }
 
 <div class="jumbotron">
@@ -8,28 +8,8 @@
 </div>
 
 <h2 class="page-header">
-    <a class="btn btn-primary pull-right" href="~/home/registrar">Nueva Factura</a>
-    Facturas
+    <a class="btn btn-primary pull-right" href="~/home/login">Login</a><a class="btn btn-primary pull-right" href="~/home/principal">Guest</a>
+    Bienvenido
 </h2>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Cliente</th>
-            <th style="width:140px">Total</th>
-            <th style="width:140px">Creado</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var m in Model)
-        {
-            <tr>
-                <td>
-                    @Html.ActionLink(m.Cliente, "detalle", new { id = m.id })
-                </td>
-                <td class="text-right">@string.Format("{0:c}", m.Total)</td>
-                <td class="text-right">@m.Creado.ToString("dd-MM-yyyy")</td>
-            </tr>
-        }
-    </tbody>
-</table>
+<img class="center-block" src="~/Imagen/snacks.jpg" alt="Solvetic">

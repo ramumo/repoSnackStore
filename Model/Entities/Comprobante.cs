@@ -1,5 +1,6 @@
 namespace Model.Entities
 {
+    using Model.BusinessLogic;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -25,6 +26,9 @@ namespace Model.Entities
         public DateTime Creado { get; set; }
 
         public virtual List<ComprobanteDetalle> ComprobanteDetalle { get; set; }
+
+        public virtual Usuario us { get; set; }
+
     }
 
     #region ViewModels
@@ -105,7 +109,7 @@ namespace Model.Entities
             return ComprobanteDetalle.Any(x => x.ProductoId == ProductoId);                        
         }
 
-        public void RetirarItemDeDetalle() {
+        public void RetirarItemDeDetalle() { 
             if (ComprobanteDetalle.Count > 0)
             {
                 var detalleARetirar = ComprobanteDetalle.Where(x => x.Retirar)

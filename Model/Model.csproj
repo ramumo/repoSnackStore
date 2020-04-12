@@ -53,8 +53,10 @@
   <ItemGroup>
     <Compile Include="BusinessLogic\ProductoLogic.cs" />
     <Compile Include="BusinessLogic\ComprobanteLogic.cs" />
+    <Compile Include="BusinessLogic\UsuarioLogic.cs" />
     <Compile Include="Entities\Comprobante.cs" />
     <Compile Include="Entities\ComprobanteDetalle.cs" />
+    <Compile Include="Entities\Usuario.cs" />
     <Compile Include="FacturadorContext.cs" />
     <Compile Include="Entities\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
