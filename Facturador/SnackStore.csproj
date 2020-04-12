@@ -142,6 +142,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Imagen\snacks.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -195,6 +196,8 @@
     <Content Include="Views\Home\Registrar.cshtml" />
     <Content Include="Views\Home\Ver.cshtml" />
     <Content Include="Views\Home\Detalle.cshtml" />
+    <Content Include="Views\Home\Principal.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

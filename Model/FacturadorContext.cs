@@ -12,6 +12,7 @@ namespace Model
         public virtual DbSet<Comprobante> Comprobante { get; set; }
         public virtual DbSet<ComprobanteDetalle> ComprobanteDetalle { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<Usuario> Usuario { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -32,6 +33,11 @@ namespace Model
                 .HasMany(e => e.ComprobanteDetalle)
                 .WithRequired(e => e.Producto)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(e => e.Username)
+                .IsUnicode(false);
+
         }
     }
 }
